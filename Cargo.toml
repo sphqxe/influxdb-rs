@@ -1,0 +1,25 @@
+[package]
+name = "influxdb"
+version = "0.2.0"
+license = "MIT/Apache-2.0"
+authors = [
+    "Jake Goulding <jake.goulding@integer32.com>",
+    "Carol (Nichols || Goulding) <carol.nichols@integer32.com>",
+    "Theodore Lee <sphqxelzlt@gmail.com>"
+]
+edition = "2018"
+
+[dependencies]
+futures = "0.3"
+reqwest = "0.10"
+quick-error = "1.2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "0.9.4"
+tokio = "0.2"
+url = "2.1"
+log = "*"
+
+[dev-dependencies]
+lazy_static = "1.4"
+rand = "0.7"
+influxdb-derive = { path = "influxdb-derive" }
